@@ -11,14 +11,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;500;600&family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script:wght@400;600&family=Raleway:ital,wght@0,200;0,300;0,600;0,700;1,200;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b644f6951c.js" crossorigin="anonymous"></script>
+    <script src="home.js"></script>
 </head>
 <body>
     <section id="header">
+        <div>
             <img class="logo" src="Saolon-Images/Saolon-Black.png">
+        </div>
         <div >
             <ul class="navbar" >
+                <li>
+                    <input type="search" placeholder="location.." id="location" ></input>
+                </li>
                 <li >
-                    <i class="fa-solid fa-magnifying-glass-location" id="search"></i>
+                    <label for="search"><i class="fa-solid fa-magnifying-glass-location" id="search" onclick="openSearch()"></i></label>
                 </li>
                 <li>
                     <a class="active" href="home.html">Home</a>
