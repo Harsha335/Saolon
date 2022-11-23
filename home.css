@@ -1,0 +1,204 @@
+*
+{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body
+{
+    width: 100%;
+    margin: 0;
+    background-color: rgb(40, 34, 34);
+}
+h2{
+    font-size: 60px;
+}
+h4{
+    font-size: 35px;
+}
+h6{
+    line-height: 40px;
+    font-size: 16px;
+}
+#header
+{
+    z-index: 99;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 10px 24px 10px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 4px #582957;
+}
+#header .navbar
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar li{
+    position: relative;
+    padding: 0 24px 0;
+}
+.navbar li a{
+    text-decoration: none;
+    color: azure;
+    transition: 100ms ease-in-out;
+}
+.navbar #search
+{
+    transition: 3ms;
+    color: azure;
+    cursor: pointer;
+}
+#header .navbar li a:hover,
+#header .navbar li a.active
+{
+    color: rgb(223, 139, 207);
+}
+#header .navbar #search:hover
+{
+    color: rgb(225, 130, 208);
+}
+.navbar li a.active::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 25px;
+    background: rgb(223, 139, 207);
+}
+#hero
+{
+    position: relative;
+    background: url("Saolon-Images/hero.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+}
+.content
+{
+    position: absolute;
+    top: 150px;
+    right: 150px;
+}
+#hero .content h2,h4
+{
+    line-height: 100px;
+}
+.content h2{
+    font-family: 'Ubuntu';
+    text-decoration: underline #d54ed1;
+}
+.content span{
+    font-family: 'Space Grotesk', sans-serif;
+    text-decoration: underline #000000;
+}
+.content h4
+{
+    font-family:'Dancing Script', cursive;;
+    font-style: italic;
+    font-weight: 900;
+    color: #582957;
+}
+.login
+{
+    margin-top: 20px;
+    width: 22%;
+    padding: 5px 2px 5px;
+    background-color:rgb(225, 130, 208);
+    border-radius: 10px;
+    transition: 100ms;
+    box-shadow:0px 2px 2px #b778b6;
+}
+.login:hover{
+    background-color: rgb(66, 59, 59);
+    box-shadow:0px 4px 6px #b778b6;
+}
+.login button
+{
+    background: none;
+    color: azure;
+    border: none;
+    font-weight: 100;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    margin-right: 0;
+}
+#footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 32px 0;
+}
+#footer .sup li
+{
+    padding-bottom: 6px;
+}
+#footer .sup
+{
+    padding: 2px 26px;
+    list-style: none;
+}
+#footer .sup i
+{
+   color: rgba(205, 185, 185, 0.923);
+   transition: 100ms;
+}
+#footer .sup i:hover
+{
+    color: azure;
+    box-shadow:0px 0px 8px #be24bb;
+}
+.contact p,h8
+{
+    line-height: 20px;
+}
+.contact h8
+{
+    font-size: 13px;
+    color: rgb(200, 157, 200);
+    font-family: 'Fira Sans Extra Condensed', sans-serif;;
+}
+.contact p
+{
+    font-size: 11px;
+    color:rgba(205, 185, 185, 0.923);
+}
+.subcontact
+{
+    padding-top: 0;
+    padding-left: 2px;
+}
+#copyr
+{
+    font-size: 10px;
+    text-align: center;
+    font-family: 'Ubuntu';
+    color: rgba(240, 255, 255, 0.671);
+}
+.mfooter h6
+{
+    color: #ec81e8;
+}
+.about h8
+{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 13px;
+    color: rgb(200, 157, 200);
+}
+.about h8,p
+{
+    line-height: 20px;
+}
+.about p
+{
+    font-size: 11px;
+    color: rgba(205, 185, 185, 0.923);
+}
