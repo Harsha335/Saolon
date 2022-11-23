@@ -63,6 +63,20 @@ h6{
 {
     color: rgb(225, 130, 208);
 }
+
+#location
+{
+    transition: width 3s;
+    transition-timing-function: ease;
+    box-sizing: border-box;
+    display: none;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline-style:groove;
+    outline-color: #be24bb;
+    outline-offset: 3px;
+}
 .navbar li a.active::after
 {
     content: "";
